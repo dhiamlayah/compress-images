@@ -1,0 +1,17 @@
+{
+  "name": "compressimagesandvideos",
+  "version": "1.0.0",
+  "description": "an api who take a url of image or video with the size of compress then send back it with compressing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "env-cmd -f .env nodemon server.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}
