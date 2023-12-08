@@ -10,7 +10,7 @@ const resizeImages = asyncMiddleware( async( req,res,next)=>{
     const fileName  = req.fileName;    
     const imagePath = path.join(__dirname, '../Picture', fileName);
     const imageWidth= parseInt(req.query.width)
-    const imageheigth= parseInt(req.query.heigth)
+    const imageheigth= parseInt(req.query.height)
 
     // Use Sharp for image processing
     const image = sharp(imagePath) //path to the stored image 
