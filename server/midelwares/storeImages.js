@@ -12,7 +12,7 @@ async function storeImage (req,res,next){
     try{
         
         const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
-
+        
         const filename = `downloaded_image_${Date.now()}.jpg`;
 
         // Define the path where the image will be saved
